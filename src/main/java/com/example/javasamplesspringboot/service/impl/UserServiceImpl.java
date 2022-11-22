@@ -23,6 +23,11 @@ public class UserServiceImpl implements UserService {
     @NonNull
     private ObjectMapper objectMapper;
 
+    /**
+     * 指定されたIdからユーザーを検索し、jsonで返す
+     * @param id String
+     * @return json
+     */
     public String searchUserById(String id) {
         Long parsedId = null;
         try {

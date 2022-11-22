@@ -27,6 +27,11 @@ public class IndexController {
         return "hello world";
     }
 
+    /**
+     * 指定されたIdからユーザーを検索し、jsonで返す
+     * @param id String
+     * @return json
+     */
     @GetMapping("/searchUser")
     public String searchUser(@RequestParam("id") String id) {
         return userService.searchUserById(id);
