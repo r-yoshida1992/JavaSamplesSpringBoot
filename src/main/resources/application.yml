@@ -12,6 +12,9 @@ spring:
       max-file-size: 32MB
       max-request-size: 32MB
       enabled: true
+  sql:
+    init:
+      mode: always
 logging:
   level:
     org:
