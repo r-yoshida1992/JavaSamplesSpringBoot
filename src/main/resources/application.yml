@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: root
+  jpa:
+    database: MYSQL
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 32MB
+      max-request-size: 32MB
+      enabled: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+  file:
+    name: ./log/JavaSampleSpringBoot_backend.log
