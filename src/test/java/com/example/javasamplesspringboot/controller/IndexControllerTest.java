@@ -1,12 +1,10 @@
 package com.example.javasamplesspringboot.controller;
 
 import com.example.javasamplesspringboot.JavaSamplesSpringBootApplication;
-import com.example.javasamplesspringboot.dao.UsersDao;
 import com.example.javasamplesspringboot.entity.Users;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +16,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import javax.sql.DataSource;
-import java.util.Optional;
 
 @AutoConfigureMockMvc
 @SpringBootTest(classes = JavaSamplesSpringBootApplication.class)
