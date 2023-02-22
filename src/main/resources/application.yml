@@ -23,3 +23,5 @@ logging:
         type: TRACE
   file:
     name: ./log/JavaSampleSpringBoot_backend.log
+server:
+  port: 80

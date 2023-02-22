@@ -29,6 +29,7 @@ public class IndexController {
 
     /**
      * 指定されたIdからユーザーを検索し、jsonで返す
+     * 
      * @param id String
      * @return json
      */
